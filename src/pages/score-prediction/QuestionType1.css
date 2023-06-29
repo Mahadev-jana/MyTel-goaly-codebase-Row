@@ -1,0 +1,59 @@
+/* contest ====================================================== */
+.contest {
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    /* background: url('../../assetsStaging/img/stadium.png') no-repeat, linear-gradient(to bottom, rgb(28, 51, 8), black); */
+    background-size: 100% 100%, cover;
+    background-position: 0 0;
+}
+.contest .club-left, .contest .club-right { color: white }
+.contest .club-left .logo, .contest .club-right .logo { 
+    background-color: white;
+    padding: .5em;
+    border-radius: 50%;
+}
+.contest .club-left img, .contest .club-right img { width: 60px; }
+.contest .mid { text-align: center; color: white; }
+.contest .mid .date {
+    background-color: #575757;
+    border: 1px solid white;
+    border-radius: 5px 5px 0 0;
+    font-size: 9pt;
+}
+.contest .mid .place {
+    background: transparent;
+    border: 1px solid white;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    font-size: 9pt;
+}
+.contest .total-point {
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    padding: 5px 11px;
+    font-size: 12px;
+}
+.prediction-wrapper {
+    padding: 2em 1em;
+}
+.prediction-box {
+    border: 1px solid #505050;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.prediction-box input[type='text'] {
+    background-color: transparent;
+    border-bottom: 1px solid #505050;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    min-height: 36px;
+    font-size: 18px;
+    text-align: center;
+}
+.prediction-box input[type='text']:focus,
+.prediction-box input[type='text']:active {
+    outline: none;
+}

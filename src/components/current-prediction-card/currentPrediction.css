@@ -1,0 +1,50 @@
+.contest {
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    /* background: url(../../assetsStaging/img/stadium.png) no-repeat, linear-gradient(to bottom, rgb(28, 51, 8), black); */
+    background-size: 100% 100%, cover;
+    background-position: 0 0;
+}
+.contest .club-left, .contest .club-right { color: white }
+.contest .club-left .logo, .contest .club-right .logo { 
+    background-color: white;
+    padding: .5em;
+    border-radius: 50%;
+}
+.contest .club-left img, .contest .club-right img { width: 60px; }
+.contest .mid { text-align: center; color: white; }
+.contest .mid .date {
+    background-color: #575757;
+    border: 1px solid white;
+    border-radius: 5px 5px 0 0;
+    font-size: 9pt;
+}
+.contest .mid .place {
+    background: transparent;
+    border: 1px solid white;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    font-size: 9pt;
+}
+.bg-whitesmoke {
+    background-color: #fff;
+}
+.bg-green {
+    background-color: #7CD327;
+}
+
+.blurContainer{
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 4px;
+    margin: -15px;
+    padding: 19px;
+}
+.p_type{
+
+        border: 1px solid;
+    border-radius: 9px;
+    padding: 5px;
+    margin-bottom: 6px;
+
+}

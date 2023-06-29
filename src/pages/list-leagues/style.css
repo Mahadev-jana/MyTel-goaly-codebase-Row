@@ -1,0 +1,8 @@
+.filter-button {
+    line-height: 40px;
+    padding: 5px 10px;
+    margin-right: 1px;
+}
+.filter-button-active {
+    background: gainsboro;
+}

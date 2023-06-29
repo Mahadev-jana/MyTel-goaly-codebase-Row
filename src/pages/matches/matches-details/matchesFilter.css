@@ -1,0 +1,19 @@
+/* .matches {
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background: url(../../../assetsStaging/img/stadium.png) no-repeat, linear-gradient(to bottom, rgb(28, 51, 8), black);
+    background-size: 100% 100%, cover;
+    background-position: 0 0;
+}
+.matches .club-left, .matches .club-right {color: white}
+.matches .club-left .logo, .matches .club-right .logo {
+    background-color: white;
+    padding: .5em;
+    border-radius: 50%;
+}
+.matches .club-left img, .matches .club-right img {width: 60px}
+.matches .mid {
+    font-size: 10pt;
+    color: white;
+} */

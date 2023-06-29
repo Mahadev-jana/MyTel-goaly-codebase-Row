@@ -1,0 +1,19 @@
+.pt-select{
+    display: block;
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #76766f;
+    padding: 15px 0;
+    border-radius: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: right 8px;
+    background-size: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    color: #1516167a;  
+}

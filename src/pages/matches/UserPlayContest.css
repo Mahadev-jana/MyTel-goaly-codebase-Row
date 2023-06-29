@@ -1,0 +1,12 @@
+.styles_modal__gNwvD.styles_modalCenter__L9F2w {
+    position: relative;
+}
+.popbut{
+
+    display: flex; 
+    justifyContent: center; 
+    position:sticky; 
+    bottom: -11px; 
+    z-index:999
+
+}

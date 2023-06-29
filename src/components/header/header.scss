@@ -1,0 +1,107 @@
+#toolbar {
+    width: 100%;
+    height: 59px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .25s ease-in-out;
+    box-shadow: 0 10px 10px -12px rgba(0, 0, 0, 0.42),
+                0 3px 10px 0px rgba(0, 0, 0, 0.12),
+                0 8px 5px -5px rgba(0, 0, 0, 0.2);
+}
+
+#toolbar.no-shadow {
+    box-shadow: none;
+}
+
+#toolbar.with-tab {
+    height: 112px;
+}
+
+#toolbar.with-tab .nav-tabs-navigation {
+    flex: 0 0 100%;
+}
+
+#toolbar.with-tab .nav-tabs {
+    text-align: center;
+}
+
+#toolbar.with-tab .nav-tabs>li {
+    float: none;
+    display: inline-block;
+}
+
+#toolbar .open-left {
+    flex: 0 0 56px;
+    line-height: 56px;
+    text-align: center;
+    position: relative;
+}
+
+#toolbar .open-right {
+    margin-top: 3px;
+    text-align: center;
+    position: relative;
+    float: right;
+}
+
+#toolbar .navbar-toggle {
+    margin: 0;
+    border: none;
+    height: 50px;
+    width: 54px;
+}
+
+#toolbar .navbar-toggle .icon-bar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toolbar .spec {
+    width: 50%;
+    margin-left: 0 !important;
+}
+
+#toolbar i {
+    color: #fff;
+    margin-top: 14px;
+}
+
+#toolbar .branding {
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 56px;
+    margin: 0;
+    flex-grow: 2;
+}
+
+#toolbar.left-only .branding {
+    text-align: left;
+    margin-left: 16px;
+}
+
+#toolbar.right-only .branding {
+    text-align: left;
+    margin-left: 16px;
+}
+
+#toolbar.transparent i,
+#toolbar.transparent .branding {
+    color: #222;
+}
+
+#toolbar.no-branding {
+    justify-content: space-between;
+}
+
+.ion-head {
+    font-size: 32px;
+    color: #fff;
+    line-height: 64px;
+    margin: 0 3px;
+}

@@ -1,0 +1,156 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 520px;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+a {text-decoration: none !important}
+
+.text-center {text-align: center}
+.text-justify {text-align: justify}
+.text-left {text-align: left}
+.text-right {text-align: right}
+
+.text-white {color: white}
+.text-black {color: black}
+.text-purple {color: #4B0654}
+.text-grey {color: grey}
+
+.bg-transparent {background-color: transparent}
+.bg-dark {background-color: #1F1F1F}
+.bg-darkgrey {background-color: #A3A3A3}
+.bg-grey {background-color: #D9D9D9}
+.bg-purple {background-color: #4B0654}
+.bg-white {background-color: white}
+.bg-whitepurple {background-color: #AC4CB7}
+.bg-whitesmoke {background-color: #F4F4F4}
+.bg-green {background-color: #7CD327}
+.bg-red {background-color: #EB0000}
+.bg-orange {background-color: #EF9C00}
+.bg-blueocean {background-color: #6BB6ED}
+
+.block {padding: 1em}
+
+.d-flex {display: flex;}
+.d-block {display: block}
+.d-inline {display: inline}
+.d-inline-block {display: inline-block}
+.j-start {justify-content: start !important}
+.j-center {justify-content: center !important}
+.j-between {justify-content: space-between !important}
+.j-around {justify-content: space-around !important}
+.j-end {justify-content: end !important}
+.ais-center {align-items: center !important}
+.ais-stretch {align-items: stretch!important}
+.flex-column {flex-direction: column}
+.float-left {float: left}
+.float-right {float: right}
+
+.h-max-c {height: max-content}
+.h-100 {height: 100%}
+.h-75 {height: 75%}
+.h-50 {height: 50%}
+.h-25 {height: 25%}
+
+.w-max-c {width: max-content}
+.w-100 {width: 100%}
+.w-75 {width: 75%}
+.w-50 {width: 50%}
+.w-25 {width: 25%}
+
+.hv-100 {height: 100vh}
+.wv-100 {width: 100vw}
+
+.m-0 {margin: 0}
+.m-1 {margin: .5em}
+.m-2 {margin: 1em}
+
+.mt-0 {margin-top: 0}
+.mt-1 {margin-top: .5em}
+.mt-2 {margin-top: 1em}
+
+.mr-0 {margin-right: 0}
+.mr-1 {margin-right: .5em}
+.mr-2 {margin-right: 1em}
+
+.mb-0 {margin-bottom: 0}
+.mb-1 {margin-bottom: .5em}
+.mb-2 {margin-bottom: 1em}
+
+.ml-0 {margin-left: 0}
+.ml-1 {margin-left: .5em}
+.ml-2 {margin-left: 1em}
+
+.my-0 {margin-top: 0; margin-bottom: 0}
+.my-1 {margin-top: .5em; margin-bottom: .5em}
+.my-2 {margin-top: 1em; margin-bottom: 1em}
+
+.mx-0 {margin-right: 0; margin-left: 0}
+.mx-1 {margin-right: .5em; margin-left: .5em}
+.mx-2 {margin-right: 1em; margin-left: 1em}
+
+.ml-auto {margin-left: auto !important}
+.mr-auto {margin-right: auto !important}
+.mx-auto {margin-left: auto !important; margin-right: auto !important}
+.my-auto {margin-top: auto !important; margin-bottom: auto !important}
+
+.p-0 {padding: 0}
+.p-1 {padding: .5em}
+.p-2 {padding: 1em}
+
+.pt-0 {padding-top: 0}
+.pt-1 {padding-top: .5em}
+.pt-2 {padding-top: 1em}
+
+.pl-0 {padding-left: 0}
+.pl-1 {padding-left: .5em}
+.pl-2 {padding-left: 1em}
+.pl-3 {padding-left: 1.5em}
+
+.pr-0 {padding-right: 0}
+.pr-1 {padding-right: .5em}
+.pr-2 {padding-right: 1em}
+.pr-3 {padding-right: 1.5em}
+
+.pb-0 {padding-bottom: 0}
+.pb-1 {padding-bottom: .5em}
+.pb-2 {padding-bottom: 1em}
+
+.py-0 {padding-top: 0; padding-bottom: 0}
+.py-1 {padding-top: .5em; padding-bottom: .5em}
+.py-2 {padding-top: 1em; padding-bottom: 1em}
+
+.px-0 {padding-left: 0; padding-right: 0}
+.px-1 {padding-left: .5em; padding-right: .5em}
+.px-2 {padding-left: 1em; padding-right: 1em}
+
+.border {border: 1px solid #D6CED9}
+.border-top {border-top: 1px solid #D6CED9}
+.border-right {border-right: 1px solid #D6CED9}
+.border-bottom {border-bottom: 1px solid #D6CED9}
+.border-left {border-left: 1px solid #D6CED9}
+
+.radius-1 {border-radius: .5em}
+.radius-2 {border-radius: 1em}
+.radius-3 {border-radius: 1.5em}
+
+.btn-dark {background-color: #343131; color: white}
+.btn-dark:focus, .btn-dark:hover {background-color: #201e1e; color: white}
+
+.btn-white {background-color: white; color: black}
+.btn-white:focus, .btn-white:hover {background-color: white; color: black}
+
+.btn-purple {background-color: #AC4CB7; color: white}
+.btn-purple:focus, .btn-purple:hover {background-color: #781783; color: white}
+
+.btn-grey {background-color: #C3C3C3; color: white}
+.btn-grey:focus, .btn-grey:hover {background-color: #acacac; color: white}
+
+.btn-pill {border-radius: 50px}
+
+.btn-transparent {background-color: transparent}
+
+.img-fluid {max-width: 100%; height: auto}
+
+.shadow {box-shadow: 0 1px 3px rgba(0,0,0,.25)}

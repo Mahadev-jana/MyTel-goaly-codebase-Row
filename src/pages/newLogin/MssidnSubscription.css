@@ -1,0 +1,155 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+.menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 .5em;
+}
+.menu a {text-align: center}
+.menu-link a img {
+    width: 80%;
+    margin-bottom: .5em;
+}
+
+/* my team ====================================================== */
+.my-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+    margin-top: -3.75em;
+}
+.my-team span {
+    width: 25%;
+    font-size: 11pt;
+    text-align: center;
+}
+.my-team ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.my-team ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .25em;
+    width: 23%;
+    height: 23%;
+}
+.my-team ul li img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.my-team > a {
+    display: flex;
+    justify-content: center;
+    max-width: 15% !important;
+    max-height: 15% !important;
+}
+.my-team > a img {
+    height: 100%;
+    width: 100%;
+}
+
+/* filter-days ================================================== */
+.filter-days {
+    padding: .5em 0;
+    margin: .5em 0;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.filter-days li {
+    color: grey;
+    display: inline-block;
+    padding: .75em 1em;
+    min-width: 30% !important;
+    text-align: center;
+    margin-right: .5em;
+    background-color: white;
+}
+.filter-days > .filter-days-active {
+    background-color: #AC4CB7;
+    color: white;
+}
+
+/* filter-league ================================================ */
+.filter-league > .btn {
+    padding: .75em;
+}
+
+/* contest ====================================================== */
+.contest {
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background: url(./assets/img/stadium.png) no-repeat, linear-gradient(to bottom, rgb(28, 51, 8), black);
+    background-size: 100% 100%, cover;
+    background-position: 0 0;
+}
+.contest .club-left, .contest .club-right { color: white }
+.contest .club-left .logo, .contest .club-right .logo { 
+    background-color: white;
+    padding: .5em;
+    border-radius: 50%;
+}
+.contest .club-left img, .contest .club-right img { width: 60px; }
+.contest .mid { text-align: center; color: white; }
+.contest .mid .date {
+    background-color: #575757;
+    border: 1px solid white;
+    border-radius: 5px 5px 0 0;
+    font-size: 9pt;
+}
+.contest .mid .place {
+    background: transparent;
+    border: 1px solid white;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    font-size: 9pt;
+}
+.contest .total-point {
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    padding: 5px 11px;
+    font-size: 12px;
+}
+.prediction-wrapper {
+    padding: 2em 1em;
+}
+.prediction-box {
+    border: 1px solid #505050;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.prediction-box input[type='text'] {
+    background-color: transparent;
+    border-bottom: 1px solid #505050;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    min-height: 36px;
+    font-size: 18px;
+    text-align: center;
+}
+.prediction-box input[type='text']:focus,
+.prediction-box input[type='text']:active {
+    outline: none;
+}
+
+.radio-subscribe + .radio-subscribe input:checked {
+    background-color: #3AB549;
+    color: #FFFFFF;
+    border-color: #3AB549;
+}
+
+.btn-default input[type=radio]:checked ~ .radio-subscribe {
+    background-color: gray;
+}

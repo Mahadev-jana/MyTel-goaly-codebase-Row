@@ -1,0 +1,298 @@
+body {
+    background-color: #edeeef;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 540px;
+  }
+  .detail-match {
+    overflow: hidden;
+  }
+  .detail-match-header {
+    background-color: #700d7b;
+    color: white;
+    text-align: center;
+  }
+  .detail-match-header h4 {
+    font-weight: 300;
+    margin: 0;
+    padding: 30px 30px 10px;
+  }
+  .detail-match-header .club img {
+    width: 75%;
+  }
+  .detail-match-header .club p {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 0px 5px;
+  }
+  .detail-match-header .score-board .date {
+    border-radius: 5px 5px 0 0;
+    background-color: #5f1a67;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .detail-match-header .score-board .score {
+    border-radius: 0 0 5px 5px;
+    background-color: #422146;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .detail-match-header .row:nth-child(3) {
+    padding: 20px;
+  }
+  .detail-match-header .row:nth-child(4) {
+    padding: 10px;
+    background-color: #862191;
+    font-size: 12px;
+  }
+  .detail-match-header .row:nth-child(3) .stadium {
+    border-right: 1px solid white;
+  }
+  
+  /* css menu */
+  .menu {
+    display: grid !important;
+    padding: 10px;
+    background-color: #d04979;
+  }
+  .menu .nav {
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+  }
+  .menu .nav::-webkit-scrollbar {
+    display: none;
+  }
+  .menu .nav li {
+    display: inline-block;
+    float: none;
+    width: 18%;
+    margin-right: 5px;
+  }
+  .menu .nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.507);
+  }
+  .menu .nav a {
+    font-size: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu .nav a img {
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: rgba(255, 255, 255, 0.164);
+  }
+  .nav-pills > li.active > a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.164);
+  }
+  
+  /* css timeline */
+  #timeline .activity .col-xs-10 {
+    padding: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  #timeline .notif-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 80px;
+    height: 100px;
+  }
+  #timeline .notif-body {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 103px;
+  }
+  #timeline .notif-icon::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: whitesmoke;
+  }
+  #timeline .notif-icon::after {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: whitesmoke;
+  }
+  #timeline .notif-icon .icon img {
+    width: 60px;
+  }
+  
+  #timeline .notif-body::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-color: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:18px solid white; 
+  }
+  #timeline .notif-body .msg {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+  #timeline .notif-body .msg h4 {
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+  #timeline .notif-body .msg span {
+    font-size: 16px;
+  }
+  
+  /* css stats */
+  #stats {
+    height: 100%;
+    background-color: white;
+  }
+  #stats .stats-header img {
+    width: 15%;
+  }
+  #stats .stats-header h5 {
+    font-weight: bold;
+  }
+  #stats .stats-header {
+    padding: 1em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #stats .stats-body {
+    margin: 10px 0;
+  }
+  #stats .stats-body .stats-item {
+    display: flex;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+  #stats .stats-body .point-left {
+    text-align: left;
+    padding: 15px 10px;
+    color: white;
+    background-color: #700D7B;
+  }
+  #stats .stats-body .point-right {
+    text-align: right;
+    padding: 15px 10px;
+    color: white;
+    background-color: #9E1AAD;
+  }
+  #stats .stats-body .point-name {
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    position: absolute;
+  }
+  .active{
+    background: none !important;
+    /* border-right: none !important; */
+  }
+  li{
+    border-right: none !important;
+  }
+  .goalTime{
+    display: inline-block;
+    border: rgb(103, 97, 97);
+    border: rgb(103, 97, 97) solid 1px;
+    /* margin-left: 100px; */
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 100;
+    float: right;
+  }
+  .scrolled{
+    position: fixed;
+    top: 64px;
+    visibility: visible;
+    z-index: 1;
+    display: grid
+  
+  }
+  .scrolledHeight{
+    padding-top: 92px
+  }
+  .scrolledHeightPlayers{
+    padding-top: 92px !important;
+  }
+  .scrolledHeightPrediction{
+    padding-top: 92px;
+    z-index: 0;
+  }
+  
+  #timeline .green {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 103px;
+  }
+  #timeline .green::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-color: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:18px solid #DBFFB9; 
+  }
+  #timeline .green .msg {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+  #timeline .green .msg h4 {
+    margin: 0 0 5px;
+    font-weight: bold;
+  }
+  #timeline .green .msg span {
+    font-size: 16px;
+  }
+  .detail-match-header .sec-3 .card {
+    /* font-size: 10pt;
+    color: black;
+    border-radius: 10px;
+    background-color: white; */
+    border-top: 1px solid white;
+    font-size: 10pt;
+    background-color: #700d7b;
+    padding: 0;
+  }
+  .detail-match-header .sec-3 .card img {
+    width: 25px;
+    height: 25px;
+    margin-right: .5em;
+  }
+  .detail-match-header .sec-3 .card ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+  }
+  .detail-match-header .sec-3 .card .row { padding: .5em 0 }
+  .detail-match-header .sec-3 .card .row:not(:last-child) { border-bottom: 1px solid rgb(209, 209, 209) }
+  
+  .detail-match-header .sec-3 {
+    padding: 0 1em 1em;
+  }
+  

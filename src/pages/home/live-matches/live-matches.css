@@ -1,0 +1,52 @@
+.timelines_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 0px !important;
+}
+.timelines_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 1px !important;
+}
+.players_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 1px !important;
+}
+.lineups_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 1px !important;
+}
+.stats_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 0px !important;
+}
+.comments_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 2px !important;
+}
+.prediction_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 6px !important;
+}
+.news_style {
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-left: 0px !important;
+}
+.tab_style {
+  font-size: 8px;
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.news {
+    display: flex;
+    align-items: center;
+}
+.news .news-cover {
+    margin-right: 1em;
+    min-width: 70px;
+    height: auto;
+}
+.news .news-cover img {
+    width: 70px;
+    height: 90px;
+}
+.news .news-title h5 {
+    font-weight: bold;
+}
+.news .news-title span {
+    font-size: 9pt;
+    color: grey;
+}
+.news-devider {
+    display: block;
+    margin: 1em 0;
+    border-bottom: 2px solid #E5E5E5;
+}

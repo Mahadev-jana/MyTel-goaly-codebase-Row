@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  minimal-ui, maximum-scale=1, user-scalable=no">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <title>Goaly</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="apple-touch-icon" sizes="256x256" href="./assetsStaging/img/football.png"> -->
+    <!-- 
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/leaderboard.css">
+    <link rel="stylesheet" href="./assets/css/winners.css"> -->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99013645-13"></script>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'scorebat-jssdk'));</script>
+
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-99013645-13');
+    </script>
+
+    <style>
+        span.blink {
+            color: red;
+            -webkit-animation: 2s linear infinite condemned_blink_effect;
+            animation: 2s linear infinite condemned_blink_effect;
+        }
+
+        @-webkit-keyframes condemned_blink_effect {
+            0% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        @keyframes condemned_blink_effect {
+            0% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        .prevent-pull-refresh {
+            overscroll-behavior-y: contain !important;
+        }
+
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0px !important;
+        }
+
+        div#google_translate_element {
+            display: none;
+            position: absolute;
+        }
+
+        div#goog-gt-tt {
+            display: none !important;
+            visibility: hidden !important;
+        }
+
+        .mediaplayer {
+            position: absolute !important;
+            top: 0 !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .nav-item {
+            font-weight: 100;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="index"></div>
+    <div id="pageOverlay"></div>
+</body>
+<script>
+    var _overlay = document.getElementById('pageOverlay');
+    var _clientY = null; // remember Y position on touch start
+    _overlay.addEventListener('touchstart', function (event) {
+        if (event.targetTouches.length === 1) {
+            // detect single touch
+            _clientY = event.targetTouches[0].clientY;
+        }
+    }, false);
+    _overlay.addEventListener('touchmove', function (event) {
+        if (event.targetTouches.length === 1) {
+            // detect single touch
+            disableRubberBand(event);
+        }
+    }, false);
+    function disableRubberBand(event) {
+        var clientY = event.targetTouches[0].clientY - _clientY;
+        if (_overlay.scrollTop === 0 && clientY > 0) {
+            // element is at the top of its scroll
+            event.preventDefault();
+        }
+        if (isOverlayTotallyScrolled() && clientY < 0) {
+            //element is at the top of its scroll
+            event.preventDefault();
+        }
+    }
+    function isOverlayTotallyScrolled() {
+        // https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight#Problems_and_solutions
+        return _overlay.scrollHeight - _overlay.scrollTop <= _overlay.clientHeight;
+    }
+</script>
+<!-- <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+<!-- <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script> -->
+
+<body>
+    <div id="google_translate_element"></div>
+    <section id="index"></section>
+</body>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</html>

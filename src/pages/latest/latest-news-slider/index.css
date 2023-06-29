@@ -1,0 +1,29 @@
+.latest-news-slider > div > div.swiper-wrapper {
+    margin-bottom: 24px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px !important;
+  
+}
+.main-news .carousel-captionh {
+    background-color: white;
+    position:initial;
+    text-align: left;
+    padding: 1em 1em 2em;
+    /* display: block; */
+    
+}
+.main-news .carousel-captionh p {
+    margin: .5em 0 0;
+    color: grey;
+    font-size: 10pt;
+}
+.main-news .carousel-captionh h3 {
+    margin: 0;
+    color: black;
+    font-size: 15pt;
+}
+.main-news .carousel-indicators {bottom: 0;}
+.main-news .carousel-indicators li {background-color: grey;}
+.main-news .carousel-indicators .active {background-color: #781783;}

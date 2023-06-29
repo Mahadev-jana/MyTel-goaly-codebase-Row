@@ -1,0 +1,40 @@
+import React from 'react';
+import { withRouter } from 'react-router';
+const Msisdnsubscription = (props)=>{
+    //console.log(props)
+    //console.log(props.location.state.msisdn)
+    
+
+    const dailysub = () =>{
+        //console.log("Dailysub")
+        //window.location.href="http://103.77.79.133:11002/goalday/?msisdn="+props.location.state.msisdn
+        window.location.href="http://149.129.252.221:8028/app/api/mytel/wap.php?type=reg&service=goalydaily&msisdn="+props.location.state.msisdn
+
+    }
+
+
+    const weeklysub = () =>{
+        //console.log("Weeklysub")
+        //window.location.href="http://103.77.79.133:11002/goalweek/?msisdn="+props.location.state.msisdn
+        window.location.href="http://149.129.252.221:8028/app/api/mytel/wap.php?type=reg&service=goalyweekly&msisdn="+props.location.state.msisdn
+    }
+
+    const fullsub = ()=>{
+        //console.log("Fullsub")
+        window.location.href="http://103.77.79.133:11002/goalannual/?msisdn="+props.location.state.msisdn
+    }
+    return(
+        
+        <div style={{height:316}}>
+            <div>
+            <h1 style={{textAlign:'center'}}>Please Select your package</h1><br/>
+            <div>
+            <button style={{width:'100%',backgroundColor:'green'}} onClick={dailysub}>Daily</button><br/><br/>
+            <button style={{width:'100%',backgroundColor:'green'}} onClick={weeklysub}>Weekly</button><br/><br/>
+            </div>
+            </div>
+        </div>
+        
+    )
+}
+export default withRouter(Msisdnsubscription);
