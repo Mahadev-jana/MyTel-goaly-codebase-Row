@@ -44,6 +44,7 @@ const NewForgetPassword = React.lazy(()=>import('./newForgetPassword'));
 const LocalLatestDetails = React.lazy(() => import('./local-details/indexLocal'));
 import PageRoutingLoader from '../loader/PageRoutingLoader';
 const Msisdnsubscription = React.lazy(()=>import('./newLogin/Msisdnsubscription'));
+const Deployment = React.lazy(()=> import('./deployment'))
 
 
 
@@ -60,6 +61,8 @@ const PageRoutes = ({match}) => (
                 }} />
                 {/* <Route exact path={`${match.path}contest`} component={Contest} /> */}
                 <Route exact path={`${match.path}matches`} component={Matches} />
+                <Route exact path={`${match.path}deployment`} component={Deployment} />
+
                 <Route path={`${match.path}contest/:id`} component={ScorePrediction} />
                 <Route path={`${match.path}scores`} component={ContestAll} />
                 <Route path={`${match.path}:videotype/video-more`} component={VideoMore} />
@@ -96,7 +99,7 @@ const PageRoutes = ({match}) => (
                 <Route path={`${match.path}local/:id`} component={LocalLatestDetails} />
                 <Route path={`${match.path}package/:id`} component={Msisdnsubscription}/>
                 <Redirect to={`${match.path}`}/>
-            </Switch>
+                </Switch>  
         </Suspense>
     </Template>
 );

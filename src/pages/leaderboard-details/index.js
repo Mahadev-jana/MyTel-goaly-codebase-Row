@@ -62,7 +62,7 @@ class LeaderBoard extends Component {
 
     axios({
       method: 'post',
-      url: 'StageGoalyApi/getleaderboard',
+      url: 'api/getleaderboard',
 
     }).then(res => {
 
@@ -120,9 +120,9 @@ class LeaderBoard extends Component {
 
             {/* </div> */}
           </div>
-          <div id="slider" class="carousel slide" data-ride="carousel" style={{ height: '90px' }}>
+          {/* <div id="slider" class="carousel slide" data-ride="carousel" style={{ height: '90px' }}>
             {!slideLoading && <Slider sliderData={this.state.sliderData} />}
-          </div>
+          </div> */}
 
           {this.state.tab === 'All' && !!this.state.all.length && <All scoreList={this.state.all} id={id}
 

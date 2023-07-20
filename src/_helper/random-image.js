@@ -1,4 +1,4 @@
-const BASE_URL = 'https://cms-or.om.goaly.mobi';
+const BASE_URL = 'https://cms-mytel.goaly.mobi/';
 const newsBanners = [
     `${BASE_URL}/assets/uploads/newsbanners/newsbanner0.jpg`,
     `${BASE_URL}/assets/uploads/newsbanners/newsbanner1.jpg`,

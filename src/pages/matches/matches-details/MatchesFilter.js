@@ -560,7 +560,7 @@ class MatchesFilter extends React.Component {
                           
                       }}
                     >
-                      <img src={"https://cms-or.om.goaly.mobi/"+league.image} style={{ display:'inline',height:'60px',width:'51px'}}/>
+                      <img src={"https://cms-mytel.goaly.mobi/"+league.image} style={{ display:'inline',height:'60px',width:'51px'}}/>
                       <a style={{display:'inline'}}>{league.competition_name}</a>
                     </li>
                   ))}
@@ -623,7 +623,7 @@ class MatchesFilter extends React.Component {
                         this.spreadList();
                     }}
                   >
-                   <img src={"https://cms-or.om.goaly.mobi/"+league.image} style={{ display:'inline',height:'60px',width:'51px'}}/>
+                   <img src={"https://cms-mytel.goaly.mobi/"+league.image} style={{ display:'inline',height:'60px',width:'51px'}}/>
                     <a style={{display:'inline'}}>{league.competition_name}</a>
                   </li>
                 ))}

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://cms-or.om.goaly.mobi/';
+const BASE_URL = 'https://cms-mytel.goaly.mobi/';
 const X_API_KEY = 'CODEX@123';
 
 // Authorised AdminID and Password

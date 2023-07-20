@@ -352,7 +352,7 @@ const League = (props) => {
     // console.log(season)
     const leaguesMainInfo = <div className="inner-league-cover">
         <div className="logo">
-            <img src={'https://cms-or.om.goaly.mobi/'+mainInfo.image} alt="" />
+            <img src={'https://cms-mytel.goaly.mobi/'+mainInfo.image} alt="" />
 
         </div>
         <h4 className="name">{mainInfo.competition_name}</h4>
